@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name=document.createElement("p")
+        
+        name.innerText="Penta Anushika"
+
+        let box=document.createElement("fieldset")
+        let objective=document.createElement("legend")
+        let text=document.createElement("p")
+
+        objective.innerText="objective"
+
+        text.innerText="I have keen interest on learning different technologies and to challenge myself on how I can perform better and better and how to improve myself better"
+
+        box.append(objective,text)
+        
+
+        let hobbies=document.createElement("ul")
+        let item1=document.createElement("li")
+        let item2=document.createElement("li")
+        let item3=document.createElement("li")
+
+
+        hobbies.innerHTML="<b>Hobbies</b>"
+        item1.innerText="listening songs"
+        item2.innerText="solving Sudoku songs"
+        item3.innerText="reading novels"
+
+        hobbies.append(item1,item2,item3)
+
+        let skills=document.createElement("ul")
+        let skill1=document.createElement("li")
+        let skills2=document.createElement("li")
+        let skills3=document.createElement("li")
+
+
+        skills.innerHTML="<b>Technical Skills</b>"
+        skill1.innerText="html"
+        skills2.innerText="css"
+        skills3.innerText="java-script"
+
+        skills.append(skill1,skills2,skills3)
+
+        let declare=document.createElement("h3")
+        declare.innerText="Declaration"
+
+        let dec_part=document.createElement("p")
+        dec_part.innerText="I have by declare that the information shared is true as by my knowledge "
+
+        document.body.append(name,box,hobbies,skills,declare,dec_part)
+
+       
+
+        
+
+
+    </script>
+</body>
+</html>

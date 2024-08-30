@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObjEljhG4w7hNSAG0Aia5eO2hQcplFZp_nQ&s">
+    <button onclick="rotate(90)">rotate 90</button>
+    <button onclick="rotate(180)">rotate 180</button>
+    <button onclick="rotate(270)">rotate 270</button>
+    <button onclick="rotate(360)">rotate 360</button>
+
+    <script>
+       
+        function rotate(a){
+            var img=document.getElementsByTagName("img")
+               
+                img[0].style.transform= "rotate("+ a + "deg)";
+        
+            
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

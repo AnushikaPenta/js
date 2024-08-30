@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      th,tr,td,table{
+        border: 1px solid;
+      
+      }
+
+      
+    </style>
+</head>
+<body>
+    <script>
+        let data=[
+  {
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 120
+    }
+  },
+  {
+    "id": 2,
+    "title": "Mens Casual Premium Slim Fit T-Shirts ",
+    "price": 22.3,
+    "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 259
+    }
+  },
+  {
+    "id": 3,
+    "title": "Mens Cotton Jacket",
+    "price": 55.99,
+    "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 500
+    }
+  },
+  {
+    "id": 4,
+    "title": "Mens Casual Slim Fit",
+    "price": 15.99,
+    "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+    "rating": {
+      "rate": 2.1,
+      "count": 430
+    }
+  },
+  {
+    "id": 5,
+    "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+    "price": 695,
+    "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 400
+    }
+  },
+  
+]
+   
+let table=document.createElement("table")
+let tr=document.createElement("tr")
+let th1=document.createElement("th")
+let th2=document.createElement("th")
+let th3=document.createElement("th")
+let th4=document.createElement("th")
+let th5=document.createElement("th")
+let th6=document.createElement("th")
+let th7=document.createElement("th")
+let th8=document.createElement("th")
+let th9=document.createElement("th")
+
+ 
+
+th1.innerText="id"
+th2.innerText="title"
+th3.innerText="price"
+th4.innerText="description"
+th5.innerText="category"
+th6.innerText="image"
+th7.innerText="rate"
+th8.innerText="count"
+th9.innerText="more details"
+
+let tr1=document.createElement("tr")
+let td11=document.createElement("td")
+let td12=document.createElement("td")
+let td13=document.createElement("td")
+let td14=document.createElement("td")
+let td15=document.createElement("td")
+let td16=document.createElement("td")
+let td17=document.createElement("td")
+let td18=document.createElement("td")
+let td19=document.createElement("td")
+
+let tr2=document.createElement("tr")
+let td21=document.createElement("td")
+let td22=document.createElement("td")
+let td23=document.createElement("td")
+let td24=document.createElement("td")
+let td25=document.createElement("td")
+let td26=document.createElement("td")
+let td27=document.createElement("td")
+let td28=document.createElement("td")
+let td29=document.createElement("td")
+
+let tr3=document.createElement("tr")
+let td31=document.createElement("td")
+let td32=document.createElement("td")
+let td33=document.createElement("td")
+let td34=document.createElement("td")
+let td35=document.createElement("td")
+let td36=document.createElement("td")
+let td37=document.createElement("td")
+let td38=document.createElement("td")
+let td39=document.createElement("td")
+
+let tr4=document.createElement("tr")
+let td41=document.createElement("td")
+let td42=document.createElement("td")
+let td43=document.createElement("td")
+let td44=document.createElement("td")
+let td45=document.createElement("td")
+let td46=document.createElement("td")
+let td47=document.createElement("td")
+let td48=document.createElement("td")
+let td49=document.createElement("td")
+
+let tr5=document.createElement("tr")
+let td51=document.createElement("td")
+let td52=document.createElement("td")
+let td53=document.createElement("td")
+let td54=document.createElement("td")
+let td55=document.createElement("td")
+let td56=document.createElement("td")
+let td57=document.createElement("td")
+let td58=document.createElement("td")
+let td59=document.createElement("td")
+
+
+td11.innerText=data[0]["id"]
+td12.innerText=data[0]["title"]
+td13.innerText=data[0]["price"]
+td14.innerText=data[0]["description"]
+td15.innerText=data[0]["category"]
+td16.innerHTML=`<img src=${data[0].image} width="100px">`
+
+td17.innerText=data[0]["rating"]["rate"]
+td18.innerText=data[0]["rating"]["count"]
+td19.innerHTML=`<a href="./pen.html "><button>see more </button> </a>`
+
+td21.innerText=data[1]["id"]
+td22.innerText=data[1]["title"]
+td23.innerText=data[1]["price"]
+td24.innerText=data[1]["description"]
+td25.innerText=data[1]["category"]
+td26.innerHTML=`<img src=${data[1].image} width="100px">`
+
+td27.innerText=data[1]["rating"]["rate"]
+td28.innerText=data[1]["rating"]["count"]
+td29.innerHTML=`<a href="/pen.html "><button>see more </button> </a>`
+
+
+td31.innerText=data[2]["id"]
+td32.innerText=data[2]["title"]
+td33.innerText=data[2]["price"]
+td34.innerText=data[2]["description"]
+td35.innerText=data[2]["category"]
+td36.innerHTML=`<img src=${data[2].image} width="100px">`
+
+td37.innerText=data[2]["rating"]["rate"]
+td38.innerText=data[2]["rating"]["count"]
+td39.innerHTML=`<a href="/pen.html "><button>see more </button> </a>`
+
+
+td41.innerText=data[3]["id"]
+td42.innerText=data[3]["title"]
+td43.innerText=data[3]["price"]
+td44.innerText=data[3]["description"]
+td45.innerText=data[3]["category"]
+td46.innerHTML=`<img src=${data[3].image} width="100px">`
+
+td47.innerText=data[3]["rating"]["rate"]
+td48.innerText=data[3]["rating"]["count"]
+td49.innerHTML=`<a href="/pen.html"><button>see more </button> </a>`
+
+
+td51.innerText=data[4]["id"]
+td52.innerText=data[4]["title"]
+td53.innerText=data[4]["price"]
+td54.innerText=data[4]["description"]
+td55.innerText=data[4]["category"]
+td56.innerHTML=`<img src=${data[4].image} width="100px">`
+
+td57.innerText=data[4]["rating"]["rate"]
+td58.innerText=data[4]["rating"]["count"]
+td59.innerHTML=`<a href=" "><button>see more </button> </a>`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tr1.append(td11,td12,td13,td14,td15,td16,td17,td18,td19)
+tr2.append(td21,td22,td23,td24,td25,td26,td27,td28,td29)
+tr3.append(td31,td32,td33,td34,td35,td36,td37,td38,td39)
+tr4.append(td41,td42,td43,td44,td45,td46,td47,td48,td49)
+tr5.append(td51,td52,td53,td54,td55,td56,td57,td58,td59)
+
+table.append(tr,tr1,tr2,tr3,tr4,tr5)
+tr.append(th1,th2,th3,th4,th5,th6,th7,th8,th9)
+document.body.appendChild(table)
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

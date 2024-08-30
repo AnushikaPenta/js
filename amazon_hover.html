@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .left_part img{
+        width:100px;
+        display:flex;
+       }
+       .main{
+        display: flex;
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left_part">
+            <img src="https://m.media-amazon.com/images/I/71PQugMmzLL._SY741_.jpg">
+            <img src="https://m.media-amazon.com/images/I/71iwhn0t7cL._SY879_.jpg">
+            <img src="https://m.media-amazon.com/images/I/61ddJSZSEIL._SY741_.jpg">
+            <img src="https://m.media-amazon.com/images/I/71uxoCErX2L._AC_UL480_QL65_.jpg">
+
+        </div>
+        <div class="display_part">
+            <img src="https://m.media-amazon.com/images/I/71PQugMmzLL._SY741_.jpg">
+    </div>
+
+    <script>
+
+        let img0=document.createElement("img")
+        let img1=document.createElement("img")
+        let img2=document.createElement("img")
+        let img3=document.createElement("img")
+
+
+
+
+
+
+
+        let imgs=document.getElementsByTagName("img")
+        imgs[0].addEventListener("mouseover",()=>{ imgs[4].src=imgs[0].src})
+        imgs[1].addEventListener("mouseover",hello1)
+        imgs[2].addEventListener("mouseover",()=>{ imgs[4].src=imgs[2].src})
+        imgs[3].addEventListener("mouseover",()=>{ imgs[4].src=imgs[3].src})
+
+        function hello1(){
+             imgs[4].src=imgs[1].src
+        }
+
+
+        
+
+    </script>
+</body>
+</html>

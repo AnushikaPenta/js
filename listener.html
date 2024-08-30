@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObjEljhG4w7hNSAG0Aia5eO2hQcplFZp_nQ&s">
+    <button >rotate 90</button>
+    <button >rotate 180</button>
+    <button >rotate 270</button>
+    <button >rotate 360</button>
+
+
+    <script>
+       
+       
+            var img=document.getElementsByTagName("img")
+
+            var button=document.getElementsByTagName("button")
+
+            button[0].addEventListener("click",hello0)
+               
+            button[1].addEventListener("click",hello1)
+
+
+            button[2].addEventListener("click",hello2)
+
+            button[3].addEventListener("click",hello3)
+
+
+            function hello0(){
+
+
+                img[0].style.transform= "rotate("+ 90 + "deg)";
+        
+            }
+            function hello1(){
+
+
+            img[0].style.transform= "rotate("+ 180 + "deg)";
+
+            }
+            function hello2(){
+            
+            
+            img[0].style.transform= "rotate("+ 270 + "deg)";
+            
+            }
+            function hello3(){
+            
+            
+            img[0].style.transform= "rotate("+ 360 + "deg)";
+            
+            }
+       
+
+
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+           
+            display: flex;
+            flex-direction: column;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            width:100%;
+            height:100vh;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div class="img">
+        <img  width=300px onmouseover="hello(0)"src="https://cdn.staticans.com/image/tr:e-sharpen-01,h-1440,w-1080,cm-pad_resize/catalog/toniq/product/OAW22FIJE16/OAW22FIJE16_1.jpg">
+    <img width=300px onmouseover="hello(1)" src="https://www.bcsenjewellers.com/img/collection/diamond%20(1).jpg">
+    <img width=300px onmouseover="hello(2)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhHnhGNJkmSMI8SDXTsFaWyqnY7MoDAVFppA&s">
+    <img  width=300px onmouseover="hello(3)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScswKx2kH9vXSoz5XeTfea-hFbWnjzAzg_wT1YSFJ1dOMPuxy1Y8kAE88JIiKOw5r1pI0&usqp=CAU">
+</div>
+   
+   
+    <img src="https://cdn.staticans.com/image/tr:e-sharpen-01,h-1440,w-1080,cm-pad_resize/catalog/toniq/product/OAW22FIJE16/OAW22FIJE16_1.jpg" ></img>
+    </div>
+   <script>
+        
+        let imgs=document.getElementsByTagName("img")
+        
+        function hello(a){
+            if (a==0){
+                imgs[4].src=imgs[0].src
+            }
+            if (a==1){
+                imgs[4].src=imgs[1].src
+            }
+            if (a==2){
+                imgs[4].src=imgs[2].src
+            }
+            if (a==3){
+                imgs[4].src=imgs[3].src
+            }
+        }
+
+
+
+
+
+
+
+   </script>
+
+</body>
+</html>
