@@ -8,31 +8,54 @@
        .left_part img{
         width:100px;
         display:flex;
+        flex-direction: column;
        }
-       .main{
+       .display{
+        display:flex;
+       }
+       .full{
         display: flex;
+      
        }
+       
     </style>
 </head>
-<body>
-    <div class="main">
-        <div class="left_part">
-            <img src="https://m.media-amazon.com/images/I/71PQugMmzLL._SY741_.jpg">
-            <img src="https://m.media-amazon.com/images/I/71iwhn0t7cL._SY879_.jpg">
-            <img src="https://m.media-amazon.com/images/I/61ddJSZSEIL._SY741_.jpg">
-            <img src="https://m.media-amazon.com/images/I/71uxoCErX2L._AC_UL480_QL65_.jpg">
-
-        </div>
-        <div class="display_part">
-            <img src="https://m.media-amazon.com/images/I/71PQugMmzLL._SY741_.jpg">
-    </div>
+<body>     
 
     <script>
+        var div_total=document.createElement("div")
+        div_total.setAttribute("class","full")
+
+        div_left_part=document.createElement("div")
+        div_left_part.setAttribute("class","left_part")
+
+        div_right=document.createElement("div")
+        div_right.setAttribute("class","display")
 
         let img0=document.createElement("img")
+        img0.src="https://m.media-amazon.com/images/I/71PQugMmzLL._SY741_.jpg"
+        img0.setAttribute("class","left_part")
+        
         let img1=document.createElement("img")
+        img1.src="https://m.media-amazon.com/images/I/71iwhn0t7cL._SY879_.jpg"
+        img1.setAttribute("class","left_part")
+       
         let img2=document.createElement("img")
+        img2.src="https://m.media-amazon.com/images/I/61ddJSZSEIL._SY741_.jpg"
+        img2.setAttribute("class","left_part")
+       
         let img3=document.createElement("img")
+        img3.src="https://m.media-amazon.com/images/I/71uxoCErX2L._AC_UL480_QL65_.jpg"
+        img3.setAttribute("class","left_part")
+      
+        let img4=document.createElement("img")
+        img4.src="https://m.media-amazon.com/images/I/71PQugMmzLL._SY741_.jpg"
+        img4.setAttribute("class","display")
+     
+
+        div_left_part.append(img0,img1,img2,img3)
+        div_right.append(img4)
+        div_total.append(div_left_part,div_right)
 
 
 
@@ -41,17 +64,17 @@
 
 
         let imgs=document.getElementsByTagName("img")
-        imgs[0].addEventListener("mouseover",()=>{ imgs[4].src=imgs[0].src})
-        imgs[1].addEventListener("mouseover",hello1)
-        imgs[2].addEventListener("mouseover",()=>{ imgs[4].src=imgs[2].src})
-        imgs[3].addEventListener("mouseover",()=>{ imgs[4].src=imgs[3].src})
+        img0.addEventListener("mouseover",()=>{ img4.src=img0.src})
+        img1.addEventListener("mouseover",hello1)
+        img2.addEventListener("mouseover",()=>{ img4.src=img2.src})
+        img3.addEventListener("mouseover",()=>{ img4.src=img3.src})
 
         function hello1(){
-             imgs[4].src=imgs[1].src
+             img4.src=img1.src
         }
 
 
-        
+        document.body.append(div_total)
 
     </script>
 </body>
